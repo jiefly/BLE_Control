@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jiefly.gao.ble_jie.Control">
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="DOWN"
+        android:id="@+id/downBtn"
+        android:layout_below="@+id/stopBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/stopBtn"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/downBtn"
+        android:layout_alignStart="@+id/downBtn" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:id="@+id/leftBtn"
+        android:layout_alignBaseline="@+id/stopBtn"
+        android:layout_alignBottom="@+id/stopBtn"
+        android:layout_toLeftOf="@+id/stopBtn" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:id="@+id/rightBtn"
+        android:layout_alignTop="@+id/stopBtn"
+        android:layout_toRightOf="@+id/stopBtn"
+        android:layout_toEndOf="@+id/stopBtn" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="UP"
+        android:id="@+id/upBtn"
+        android:layout_marginBottom="38dp"
+        android:layout_above="@+id/stopBtn"
+        android:layout_toRightOf="@+id/leftBtn"
+        android:layout_toEndOf="@+id/leftBtn" />
+
+
+</RelativeLayout>
